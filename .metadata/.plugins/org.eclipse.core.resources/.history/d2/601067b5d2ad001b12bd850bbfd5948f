@@ -1,0 +1,20 @@
+package Save_Data;
+
+import java.io.*;
+import java.util.Iterator;
+
+import javax.swing.*;
+
+public class SaveLog {
+	
+	private File file = null;
+	private final String titulo = "Arquivo LOG - USUARIO";
+	private final String pos = "o - ";
+	
+	public SaveLog() {
+		
+	}
+
+	
+	
+}

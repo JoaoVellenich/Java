@@ -1,6 +1,8 @@
 package entrada;
 
 import javax.swing.JOptionPane;
+
+import exception.CadastroException;
 import pessoa.*;
 
 public class Menu {
@@ -25,8 +27,8 @@ public class Menu {
 				ok = false;								
 				_idade = IE.getInt("Idade:");			
 				ok = true;								
-			} catch (IllegalArgumentException e) {		
-				MSG("Valor invalidos");					
+			} catch (CadastroException e) {
+				 e.entradaException();
 			}
 		} while (!ok); 	
 		do {			
@@ -34,8 +36,8 @@ public class Menu {
 				ok = false;								
 				_anoIngresso = IE.getInt("ingresso:");	
 				ok = true;								
-			} catch (IllegalArgumentException e) {		
-				MSG("Valor invalidos");					
+			} catch (CadastroException e) {		
+				e.entradaException();
 			}
 		} while (!ok);	
 		do {			
@@ -43,12 +45,12 @@ public class Menu {
 				ok = false;								
 				_periodo = IE.getInt("Periodo:");		
 				ok = true;								
-			} catch (IllegalArgumentException e) {		
-				MSG("Valor invalidos");					
+			} catch (CadastroException e) {		
+				e.entradaException();
 			}
 		} while (!ok);	
 		
-		a = new Aluno(_nome, _idade, _ra, _anoIngresso, _periodo);	
+		a = new Aluno(_nome, _idade, _ra, _anoIngresso, _periodo);	 
 		return a;		
 	}
 
@@ -72,4 +74,5 @@ public class Menu {
 	public void botCancel() {
 		JOptionPane.showInternalMessageDialog(null,"Operacao Invalida", null, JOptionPane.ERROR_MESSAGE);
 	}
+	
 }	

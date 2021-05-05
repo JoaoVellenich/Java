@@ -1,0 +1,19 @@
+package exception;
+
+import armazenador.IArmazenador;
+import armazenador.VetDin;
+
+public class CadastroException extends Exception {
+	
+	private static final long serialVersionUID = 1L;
+	IArmazenador IA_LOG = new VetDin();	
+	
+	
+	CadastroException(){
+		
+	}
+	
+	CadastroException(String str){
+		
+	}
+}

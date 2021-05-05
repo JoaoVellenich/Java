@@ -66,12 +66,7 @@ public class Cadastro {
 	public void salvarDados(){
 		DadosIn save = new DadosIn();
 		Object vet[] = ((VetDin)this.IA).getVetor();
-
-		for(int i = 0; i < vet.length; i ++){
-			Aluno a = (Aluno)vet[i];
-			save.saveData(a);
-		}
-
+		save.saveData(vet);
 	}
     
  }

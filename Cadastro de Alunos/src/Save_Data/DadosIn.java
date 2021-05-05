@@ -1,6 +1,8 @@
 package Save_Data;
 
 import java.io.*;
+import java.util.Iterator;
+
 import javax.swing.*;
 
 import pessoa.Aluno;
@@ -8,25 +10,18 @@ import pessoa.Aluno;
 public class DadosIn {
     
     private File file = null;
-    private String arquivo = null;
+    private String arquivo = "Save_Data.txt";
     private final char separador = '|';
-    String sn = "S";
 
     public DadosIn(){
         newFile();
     }
     
     public void newFile(){
-        do {
-            arquivo = JOptionPane.showInputDialog("Arquivo: ");
-            file = new File(arquivo);
-            if (file.exists()) {
-                sn = JOptionPane.showInputDialog("Arquivo: " + arquivo + " ja existe, pode sobrescreve-lo?(s/n): ");
-            }
-        } while(sn.toUpperCase().charAt(0) == 'N');
+    	file = new File(arquivo);
     }
 
-    public void saveData(Aluno a){
+    public void saveData(Object vet[]){
         PrintWriter pw = null;
         FileOutputStream fos = null;
 
@@ -42,15 +37,10 @@ public class DadosIn {
         }
 
         try {
-            pw.print(a.getNome());
-            pw.print(separador);
-            pw.print(a.getIdade());
-            pw.print(separador);
-            pw.print(a.getRa());
-            pw.print(separador);
-            pw.print(a.getAnoIngresso());
-            pw.print(separador);
-            pw.println(a.getPeriodo());
+        	for(int i = 0; i < vet.length; i ++) {
+        		Aluno a = (Aluno)vet[i];
+        		textOut(pw, a);
+        	}
         } catch (Exception e) {
             System.out.println("Erro inesperado ao tentar escrever no arquivo: " + arquivo);
             return;
@@ -67,5 +57,17 @@ public class DadosIn {
             }
         }
     }
-
+    
+    private void textOut(PrintWriter pw, Aluno a ){
+    	pw.print(a.getNome());
+        pw.print(separador);
+        pw.print(a.getIdade());
+        pw.print(separador);
+        pw.print(a.getRa());
+        pw.print(separador);
+        pw.print(a.getAnoIngresso());
+        pw.print(separador);
+        pw.println(a.getPeriodo());
+    }
+    
 }
