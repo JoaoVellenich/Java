@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Aluno
+comment1.params=nome\ idade\ ra\ anoIng\ periodo
+comment1.target=Aluno(java.lang.String,\ int,\ java.lang.String,\ int,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getRa()
+comment3.params=
+comment3.target=int\ getPeriodo()
+comment4.params=
+comment4.target=int\ getAnoIngresso()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

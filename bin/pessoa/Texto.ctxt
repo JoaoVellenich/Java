@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Texto
+comment1.params=txt
+comment1.target=Texto(java.lang.String)
+comment2.params=t
+comment2.target=void\ setTxt(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getTxt()
+comment4.params=
+comment4.target=java.lang.String\ inverterTexto()
+comment5.params=
+comment5.target=int\ getQtdePalavras()
+comment6.params=
+comment6.target=void\ limparEspacosExcedentes()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

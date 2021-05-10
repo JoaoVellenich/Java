@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ArquivoBinario
+comment1.params=objeto\ nomeArq
+comment1.target=void\ gravarObjeto(java.lang.Object[],\ java.lang.String)
+comment2.params=nomeArq
+comment2.target=java.lang.Object[]\ lerObjeto(java.lang.String)
+comment3.params=
+comment3.target=boolean\ arquivoExiste()
+numComments=4

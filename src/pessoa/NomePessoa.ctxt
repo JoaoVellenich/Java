@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=NomePessoa
+comment1.params=nome
+comment1.target=NomePessoa(java.lang.String)
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ NomePessoa\r\n
+comment2.params=nome
+comment2.target=void\ setNome(java.lang.String)
+comment3.params=
+comment3.target=Texto\ getNome()
+comment4.params=
+comment4.target=java.lang.String\ getNomeBibliografico()
+comment4.text=\r\n\ Retorna\ nome\ bibliografico\r\n\ @return\ sBib\ nome\ bibliografico\r\n
+comment5.params=s
+comment5.target=boolean\ ePreposicao(java.lang.String)
+comment5.text=\r\n\ Verifica\ se\ string\ eh\ uma\ "preposicao"\r\n\ @param\ s\ string\ a\ ser\ verificada\r\n\ @return\ true\ eh\ preposicao\ false\ nao\ eh\ preposicao\r\n
+numComments=6

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=SaveLog
+comment1.params=
+comment1.target=SaveLog()
+comment2.params=
+comment2.target=void\ newFile()
+comment3.params=vet
+comment3.target=void\ saveData(java.lang.Object[])
+comment4.params=pw\ str
+comment4.target=void\ textOut(java.io.PrintWriter,\ java.lang.String)
+numComments=5
